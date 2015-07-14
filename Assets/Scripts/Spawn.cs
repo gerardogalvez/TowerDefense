@@ -10,6 +10,7 @@ public class Spawn : MonoBehaviour {
 	public float time;
 
 	public Text waveBeaten;
+	public int wave;
 
 	private float interval = 3;
 
@@ -20,8 +21,10 @@ public class Spawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		wave = 1;
 		monsterPrefab.GetComponent<MonsterHealth> ().health = 100;
 		InvokeRepeating ("SpawnNext", 0, interval);
+		waveBeaten.text = "Current wave: " + wave.ToString ();
 	}
 
 	void Update()
@@ -41,7 +44,10 @@ public class Spawn : MonoBehaviour {
 			// Make enemies spawn faster.
 			if (interval > 1.3f)
 				interval -= 0.29f;
+
 			InvokeRepeating ("SpawnNext", 0, interval);
+			wave++;
+			waveBeaten.text = "Current wave: " + wave.ToString ();
 		}
 	}
 
