@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Money : MonoBehaviour {
 
-	public static int money = 100;
+	public static int money = 400;
 	public Text moneyText;
 
 	void Update(){

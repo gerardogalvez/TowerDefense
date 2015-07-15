@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 
 	private float speed = 10;
+	public int bulletDamage;
 
 	public Transform target;
 
@@ -24,8 +25,8 @@ public class Bullet : MonoBehaviour {
 		if (monster.name == "Monster(Clone)") {
 			MonsterHealth monsterHealth = monster.GetComponentInChildren<MonsterHealth> ();
 			if (monsterHealth) {
-				monsterHealth.decreaseHealth (Tower.damage);
-				Destroy (this.gameObject);
+				monsterHealth.decreaseHealth(bulletDamage);
+				Destroy(this.gameObject);
 			}
 		}
 	}

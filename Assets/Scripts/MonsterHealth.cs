@@ -5,11 +5,6 @@ public class MonsterHealth : MonoBehaviour {
 
 	public int health = 100;
 
-	/*public int currentHealth()
-	{
-		return health;
-	}*/
-
 	public void decreaseHealth(int damage)
 	{
 		health = health - damage;
