@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// --- Basic Tower ---
+// Cost: $85
+// Fire rate: 1 bullet per second
+// Damage: 50
 public class Tower : MonoBehaviour {
 
 	public GameObject bulletPrefab;

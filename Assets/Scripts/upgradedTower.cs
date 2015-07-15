@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// --- Upgraded Tower ---
+// Cost to upgrade: $150
+// Fire rate: 1 bullet each 0.75 seconds
+// Damage: 90
 public class upgradedTower : MonoBehaviour {
 
 	public GameObject bulletPrefab;
