@@ -3,7 +3,7 @@ using System.Collections;
 
 // --- Upgraded Tower ---
 // Cost to upgrade: $150
-// Fire rate: 1 bullet each 0.75 seconds
+// Fire rate: 1 bullet each 0.85 seconds
 // Damage: 90
 public class upgradedTower : MonoBehaviour {
 
@@ -11,8 +11,8 @@ public class upgradedTower : MonoBehaviour {
 	public GameObject monster = null;
 	public float rotationSpeed = 35;
 	private float nextFire = 0;
-	private float fireRate = 0.75f;
-	public static int damage = 90;
+	private float fireRate = 0.85f;
+	public static int damage = 85;
 	// Update is called once per frame
 	void Update () {
 		this.transform.Rotate (Vector3.up * Time.deltaTime * rotationSpeed, Space.World);

@@ -10,7 +10,7 @@ public class MonsterHealth : MonoBehaviour {
 		health = health - damage;
 		if (health <= 0){
 			Destroy (gameObject);
-			Money.money += 15;
+			Money.money += 12;
 		}
 	}
 }
